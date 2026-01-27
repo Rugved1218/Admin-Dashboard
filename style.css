@@ -1,0 +1,31 @@
+html,
+body{
+    min-height:100vh;
+    
+}
+
+.container{
+    height:100vh;
+    display:grid;
+    grid-template-columns:1fr 4fr;
+    grid-template-rows:1fr 5fr;
+}
+
+.sidebar{
+    background-color:blue;
+    grid-column:1/2;
+    grid-row:1/-1;
+}
+
+.header{
+    background-color: greenyellow;
+    grid-column:2/3;
+    grid-row:1/2;
+    
+}
+
+.main-content{
+    background-color:brown;
+    grid-column:2/3;
+    grid-row:2/3;
+}
