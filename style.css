@@ -149,7 +149,7 @@ form{
 
 #search{
     width:100%;
-    background-color:#e2e8f0;;
+    background-color:#e2e8f0;
     border-radius:24px;
     height:24px;
     padding:4px;
@@ -206,9 +206,131 @@ form{
 .buttons{
     display:flex;
     margin-left:auto;
-    
     gap:36px;
 }
+
+.main-content{
+    background-color:#e2e8f0;
+    
+    display:grid;
+    grid-template-columns:3.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    padding-left:16px;
+    padding-top:24px;
+    padding-bottom:40px;
+    padding-right:24px;
+}
+
+.project{
+    grid-row:1/3;
+    padding-right:24px;
+}
+
+.pjHead,.ancHead,.tdHead{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom: 16px;
+}
+
+
+
+.project>.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    
+    gap:24px;
+}
+
+.project>.card-container>.card{
+    border-left: 8px solid #f0B429;
+    display:flex;
+    background-color:white;
+    padding-top:32px;
+    padding-left:16px;
+    padding-right:24px;
+    padding-bottom:24px;
+    border-radius:10px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    0 6px 12px rgba(0, 0, 0, 0.08),
+    0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+
+.card-main{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+.card-main>.card-header{
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:8px;
+    line-height:1.5;
+}
+
+.card-main>.card-body{
+    font-size:16px;
+    color:#636363;
+    line-height:1.2;
+}
+
+.card-logo{
+    display:flex;
+    justify-content: end;
+    margin-top:auto;
+    gap:24px;
+    
+}
+.card-logo>div>svg{
+    
+    fill:black;
+    height:24px;
+    width:auto;
+}
+
+.anc-container{
+    box-sizing:border-box;
+    padding:16px;
+    margin-right:32px;
+    display:flex;
+    flex-direction:column;
+    background-color:white;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1)
+
+}
+
+.anc-card{
+    box-sizing: border-box;
+    padding-top:16px;
+    padding-bottom:16px;
+}
+
+.anc-card-head{
+    font-size:0.95rem;
+    font-weight:700;
+    line-height: 1.5;
+}
+
+.anc-card-body{
+    line-height: 1.4;
+    color:#636363;
+    font-size:0.8rem;
+}
+
+.anc-card:not(:last-child){
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.trending{}
 
 
 
